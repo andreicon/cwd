@@ -2,6 +2,8 @@
 FROM debian:jessie
 
 RUN apt-get update && apt-get install -y openssh-server
+COPY docker-entrypoint.sh /docker-entrypoint.sh
+RUN chmod +x /docker-entrypoint.sh
 
 # add our user and group first to make sure their IDs get assigned consistently, regardless of whatever dependencies get added
 RUN groupadd -r mysql && useradd -r -g mysql mysql
@@ -91,7 +93,6 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 
 VOLUME /var/lib/mysql
 
-COPY docker-entrypoint.sh /docker-entrypoint.sh
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
 EXPOSE 3306

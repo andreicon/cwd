@@ -1,4 +1,15 @@
 {
+    "ace": {
+        "search": {
+            "@backwards": "false",
+            "@highlightmatches": "true",
+            "@matchcase": "false",
+            "@preservecase": "false",
+            "@regex": "false",
+            "@wholeword": "false",
+            "@wraparound": "true"
+        }
+    },
     "console": {
         "@expanded": false,
         "@height": "153",
@@ -103,15 +114,15 @@
             "@ace": 1,
             "@acestatus": 1,
             "@divider": 4,
-            "@document": 5,
+            "@document": 6,
             "@form": 6,
             "@immediate": 1,
             "@menu": 5,
             "@menuitem": 13,
             "@pane": 2,
-            "@session": 5,
-            "@tab": 1,
-            "@undoManager": 5,
+            "@session": 6,
+            "@tab": 5,
+            "@undoManager": 6,
             "@welcome": 1
         }
     },
@@ -129,7 +140,7 @@
     },
     "panecycle": {
         "json()": [
-            "tab0"
+            "tab1"
         ]
     },
     "panels": {
@@ -163,22 +174,38 @@
         "@showfs": true,
         "expanded": {
             "json()": [
-                "/"
+                "/",
+                "/clustercontrol",
+                "/mariadb",
+                "~",
+                "/.c9",
+                "/.git"
             ]
+        },
+        "favorites": {
+            "json()": []
         }
     },
     "recentfiles": {
         "json()": []
     },
+    "search-history": {
+        "search": {
+            "json()": [
+                "ssh"
+            ]
+        }
+    },
     "tabs": {
         "json()": {
-            "focus": "/mariadb/Dockerfile",
+            "focus": "tab4",
             "meta": {
                 "accessList": [
-                    "tab5",
-                    "tab0",
+                    "tab4",
                     "tab1",
-                    "tab2"
+                    "tab2",
+                    "tab5",
+                    "tab0"
                 ]
             },
             "name": "pane0",
@@ -188,39 +215,19 @@
                     "name": "tab1",
                     "path": "/docker-compose.yml",
                     "className": [
-                        "tab1"
+                        "tab1",
+                        "changed"
                     ],
                     "document": {
+                        "changed": true,
+                        "meta": {
+                            "timestamp": 1478162708444,
+                            "newfile": true
+                        },
                         "filter": true,
                         "title": "docker-compose.yml",
                         "tooltip": "/docker-compose.yml",
-                        "ace": {
-                            "folds": [],
-                            "scrolltop": 0,
-                            "scrollleft": 0,
-                            "selection": {
-                                "start": {
-                                    "row": 37,
-                                    "column": 0
-                                },
-                                "end": {
-                                    "row": 37,
-                                    "column": 0
-                                },
-                                "isBackwards": false
-                            },
-                            "options": {
-                                "guessTabSize": true,
-                                "useWrapMode": false,
-                                "wrapToView": true
-                            },
-                            "firstLineState": 0
-                        },
-                        "hash": "f1200b10e718370aabc10df370bd960977d69da1",
-                        "meta": {
-                            "timestamp": 1478096361833
-                        },
-                        "changed": false
+                        "ace": {}
                     },
                     "editorType": "ace",
                     "active": false
@@ -230,39 +237,19 @@
                     "name": "tab2",
                     "path": "/clustercontrol/Dockerfile",
                     "className": [
-                        "tab2"
+                        "tab2",
+                        "changed"
                     ],
                     "document": {
+                        "changed": true,
+                        "meta": {
+                            "timestamp": 1478160638663,
+                            "newfile": true
+                        },
                         "filter": true,
                         "title": "Dockerfile",
                         "tooltip": "/clustercontrol/Dockerfile",
-                        "ace": {
-                            "folds": [],
-                            "scrolltop": 0,
-                            "scrollleft": 0,
-                            "selection": {
-                                "start": {
-                                    "row": 0,
-                                    "column": 32
-                                },
-                                "end": {
-                                    "row": 0,
-                                    "column": 32
-                                },
-                                "isBackwards": false
-                            },
-                            "options": {
-                                "guessTabSize": true,
-                                "useWrapMode": false,
-                                "wrapToView": true
-                            },
-                            "firstLineState": 0
-                        },
-                        "hash": "dc3e26267d36f72ddc3d028125747630f0d43ae5",
-                        "meta": {
-                            "timestamp": 1478096353977
-                        },
-                        "changed": false
+                        "ace": {}
                     },
                     "editorType": "ace",
                     "active": false
@@ -273,12 +260,13 @@
                     "path": "/mariadb/Dockerfile",
                     "className": [
                         "tab5",
-                        "focus"
+                        "changed"
                     ],
                     "document": {
-                        "changed": false,
+                        "changed": true,
                         "meta": {
-                            "timestamp": 1478100222037
+                            "timestamp": 1478161877405,
+                            "newfile": true
                         },
                         "filter": true,
                         "title": "Dockerfile",
@@ -286,27 +274,55 @@
                         "ace": {}
                     },
                     "editorType": "ace",
-                    "active": true
+                    "active": false
                 },
                 {
                     "type": "tab",
                     "name": "tab0",
+                    "path": "/mariadb/docker-entrypoint.sh",
+                    "className": [
+                        "tab0",
+                        "changed"
+                    ],
+                    "document": {
+                        "changed": true,
+                        "meta": {
+                            "timestamp": 1478162192168,
+                            "newfile": true
+                        },
+                        "filter": true,
+                        "title": "docker-entrypoint.sh",
+                        "tooltip": "/mariadb/docker-entrypoint.sh",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab4",
                     "path": "",
                     "className": [
-                        "tab0"
+                        "tab4",
+                        "focus"
                     ],
                     "document": {
                         "changed": false,
                         "meta": {
-                            "welcome": true,
-                            "timestamp": 1478159870148
+                            "timestamp": 1478173908263
                         },
                         "filter": true,
-                        "title": "Welcome",
-                        "welcome": {}
+                        "title": "bash - \"69adf4d96dc9\"",
+                        "tooltip": "bash - \"69adf4d96dc9\"",
+                        "terminal": {
+                            "id": "devel_91",
+                            "cwd": "",
+                            "width": 1658,
+                            "height": 952
+                        }
                     },
-                    "editorType": "welcome",
-                    "active": false
+                    "editorType": "terminal",
+                    "active": true
                 }
             ],
             "skin": "editor_tab",
@@ -316,7 +332,7 @@
     },
     "tree_selection": {
         "json()": [
-            "/clustercontrol/Dockerfile"
+            "~"
         ]
     }
 }

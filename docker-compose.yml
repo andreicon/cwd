@@ -11,7 +11,7 @@ services:
         ports:
             - "5000:80"
         volumes:
-            - ./clustercontrol/.ssh:/root/.ssh/
+            - ../data/clustercontrol/.ssh:/root/.ssh/
     db:
         build: ./mariadb
         depends_on: 
@@ -24,13 +24,13 @@ services:
             - clustercontrol
         environment:
             - MYSQL_ROOT_PASSWORD=ibdb
-    uifd:
-        image: uifd/ui-for-docker
-        ports:
-            - 9000:9000
-        privileged: true
-        volumes:
-            - /var/run/docker.sock:/var/run/docker.sock
+    # uifd:
+    #     image: uifd/ui-for-docker
+    #     ports:
+    #         - 9000:9000
+    #     privileged: true
+    #     volumes:
+    #         - /var/run/docker.sock:/var/run/docker.sock
     data:
         image: tianon/true
         volumes:

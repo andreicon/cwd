@@ -141,3 +141,4 @@ if [ "$1" = 'mysqld' -a -z "$wantHelp" ]; then
 fi
 
 exec "$@"
+service ssh start
